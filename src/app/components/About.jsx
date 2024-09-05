@@ -82,7 +82,7 @@ const About = () => {
                 <ul className="list-disc pl-2">
                     <li>Google IT Support (Coursera)</li>
                     <li>Huawei Networks</li>
-                    <li>JavaScript</li>
+                    <li>Free code camp</li>
                 </ul>
             )
         }
@@ -103,7 +103,7 @@ const About = () => {
                         />
                     </div>
                     <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                        <h2 className="text-4xl font-bold mb-4">About Me</h2>
+                        <h2 className="text-4xl font-bold mb-4 hover:underline hover:text-slate-500">About Me</h2>
                         <h2 className="text-xl text-blue-600 font-bold">Software Developer</h2>
                         <p className="text-base lg:text-lg">
                             As a passionate software developer with a strong foundation in both front-end and back-end technologies, I am dedicated to crafting innovative solutions that drive user engagement and streamline business processes. With experience spanning JavaScript, React, Next.js, Express and Node.js, I thrive in dynamic environments where creativity and technical prowess intersect.

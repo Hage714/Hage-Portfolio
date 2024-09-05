@@ -18,7 +18,8 @@ const Navbar = () => {
     return (
         <nav className='fixed mx-auto border border-slate-400 top-0 left-0 right-0 z-10 bg-gradient-to-br from-blue-400 via-blue-200 to-blue-500 bg-opacity-80'>
             <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2'>
-                <Link href="/" className='text-3xl md:text-5xl text-black font-semibold'>LOGO</Link>
+                <Link href="/" className='text-sm md:text-base lg:text-3xl text-black hover:text-white'>HAGE WOCHE</Link>
+
 
                 <div className='mobile-menu block sm:hidden lg:hidden'>
                     <button

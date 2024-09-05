@@ -9,56 +9,55 @@ const projectsData = [
     {
         id: 1,
         imgUrl: "/images/projects/tech3.jpg",
-        title: "Project 1",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tag: ["All", "Nextjs"],
-        gitUrl: "https://hage.com",
+        title: "Shoe App",
+        description: "An intuitive shoe store app built with modern web technologies, offering users a seamless browsing experience, product filtering, and a secure checkout process.Integrated with user entication and orization.",
+        tag: ["All", "MERN"],
+        gitUrl: "https://github.com/Hage714/Shoe-App-MERN.git",
         previewUrl: "https://hage.com",
     },
     {
-        id: 1,
-        imgUrl: "/images/projects/tech4.jpg",
-        title: "Project 2",
-        description: "Donec vel ipsum vel nunc faucibus condimentum.",
-        tag: ["All", "React"],
-        gitUrl: "https://hage.com",
+        id: 2,
+        imgUrl: "/images/projects/tec2.png",
+        title: "Recipe App",
+        description: "A full-stack recipe app that allows users to explore, create, and share recipes. The app features a user-friendly interface for browsing recipes, adding new ones, and managing a personal collection.",
+        tag: ["All", "MERN"],
+        gitUrl: "https://github.com/Hage714/Recipe-App-MERN.git",
         previewUrl: "https://hage.com",
     },
     {
-        id: 1,
+        id: 3,
         imgUrl: "/images/projects/tech5.jpg",
-        title: "Project 3",
-        description:
-            "Nulla facilisi. Sed vulputate, mauris at consectetur finibus.",
-        tag: ["All", "Nextjs"],
-        gitUrl: "https://hage.com",
+        title: "Bookstore Project",
+        description:"An online bookstore application built using the MERN stack, featuring user entication, a shopping cart, and a seamless checkout process. Users can browse, search, and purchase books from a vast collection.",
+        tag: ["All", "MERN"],
+        gitUrl: "https://github.com/Hage714/Bookstore-MERN-App.git",
         previewUrl: "https://hage.com",
     },
     {
         id: 4,
         imgUrl: "/images/projects/tech6.jpg",
-        title: "Project 2",
-        description: "Donec vel ipsum vel nunc faucibus condimentum.",
-        tag: ["All", "React"],
-        gitUrl: "https://hage.com",
+        title: "GYM Management API",
+        description: "Developed a Gym Management API that streamlines member registration.The API supports secure entication, integrates with payment gateways, and provides real-time analytics for gym administrators.",
+        tag: ["All", "Express"],
+        gitUrl: "https://github.com/Hage714/GYM-Management-API.git",
         previewUrl: "https://hage.com",
     },
     {
         id: 5,
         imgUrl: "/images/projects/tech7.jpg",
-        title: "Project 2",
-        description: "Donec vel ipsum vel nunc faucibus condimentum.",
-        tag: ["All", "React"],
-        gitUrl: "https://hage.com",
+        title: "Shopping List API",
+        description: "Developed a RESTful API that allows users to create, read, update, and delete items. It's designed for seamless integration with front-end applications, providing endpoints for managing shopping lists.",
+        tag: ["All", "Express"],
+        gitUrl: "https://github.com/Hage714/Express-Shopping-List-App.git",
         previewUrl: "https://hage.com",
     },
     {
         id: 6,
         imgUrl: "/images/projects/tech8.jpg",
-        title: "Project 2",
-        description: "Donec vel ipsum vel nunc faucibus condimentum.",
-        tag: ["All", "React"],
-        gitUrl: "https://hage.com",
+        title: "Events API Documentation",
+        description: "An Events API that allows users to create, get, update and delete events. This API provides real-time updates for event schedules, making it a robust backend solution for event management applications",
+        tag: ["All", "Express"],
+        gitUrl: "https://github.com/Hage714/Express-Events-App.git",
         previewUrl: "https://hage.com",
     },
 ];
@@ -85,24 +84,24 @@ const ProjectsSection = () => {
         <>
             <Navbar />
             <section id="projects" className="">
-                <h2 className="text-black text-center text-3xl font-bold mb-4">
+                <h2 className="text-black text-center text-3xl font-bold mb-4 hover:underline hover:text-slate-500">
                     My Projects
                 </h2>
                 <div className="text-black flex flex-row justify-center items-center gap-2 py-6">
                     <ProjectTag
                         onClick={handleTagChange}
                         name="All"
-                        isSelected={tag === "All"}
+                        isSelected={tag === "All"} className="text-black"
                     />
                     <ProjectTag
                         onClick={handleTagChange}
-                        name="React"
-                        isSelected={tag === "React"}
+                        name="MERN"
+                        isSelected={tag === "MERN"}
                     />
                     <ProjectTag
                         onClick={handleTagChange}
-                        name="Nextjs"
-                        isSelected={tag === "Nextjs"}
+                        name="Express"
+                        isSelected={tag === "Express"}
                     />
                 </div>
 
@@ -117,9 +116,10 @@ const ProjectsSection = () => {
                                 imgUrl={project.imgUrl}
                                 title={project.title}
                                 description={project.description}
-                                tags={project} // this is an array of strings that will be rendered as tags in the ProjectCard component
+                                tags={project.tag} // this is an array of strings that will be rendered as tags in the ProjectCard component
                                 gitUrl={project.gitUrl}
                                 previewUrl={project.previewUrl}
+                                
                             />
                         </motion.li>
                     ))}
