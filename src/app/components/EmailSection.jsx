@@ -47,12 +47,12 @@ const EmailSection = () => {
             >
                 <div className="absolute inset-0 flex justify-center items-center"></div>
                 <div className="z-10">
-                    <h5 className="text-xl font-bold text-black my-2">Let's connect</h5>
+                    <h5 className="text-xl font-bold text-black my-2">Let us connect</h5>
                     <p className="mb-4 max-w-md text-black">
-                        I’m always excited to connect with fellow developers, tech
+                        I am always excited to connect with fellow developers, tech
                         enthusiasts, and potential collaborators. Whether you have a
                         question, want to discuss a project, or simply wish to network, feel
-                        free to reach out. I’m open to new opportunities and enjoy exploring
+                        free to reach out. I am open to new opportunities and enjoy exploring
                         innovative ideas and solutions.
                     </p>
 
